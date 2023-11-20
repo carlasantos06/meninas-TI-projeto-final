@@ -1,0 +1,269 @@
+* {
+    margin: 50;
+    padding: 50;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+}
+
+.cabecalho {
+    width: 90%;
+    background-color: rgb(91, 91, 212);
+    padding: 50px 8%;
+    float: left;
+}
+
+img {
+    max-width: 100%;
+    width: 30%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, rgb(139, 144, 211), rgb(139, 144, 211));
+}
+
+.menu {
+    background-color: rgb(96, 111, 241);
+    width: 90%;
+    padding: 18px 8%;
+    float: left;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    color: black;
+    margin-right: 30px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu img {
+    width: 30px;
+    float: right;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: rgb(6, 2, 68);
+    background-color: rgb(136, 152, 241);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.social {
+    float: right
+}
+
+.social a {
+    margin-left: 20px;
+
+}
+
+.principal {
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+.sobre {
+    width: 100%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.sobre h2 {
+    margin-bottom: 25px;
+    color: rgb(50, 0, 97);
+    width: 40%;
+}
+
+.sobre img {
+    width: 30%;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.abc {
+float: right;
+    padding: 15px;
+    border-radius: 12px;
+    width: 25%;
+    margin: 0 15px 15px 0;
+  }
+  .abc img{
+    width: 80%;
+  }
+
+.texto{
+    padding: 20px;
+    width: 90%;
+}
+.texto button{
+    padding: 12px;
+    background-color: rgb(175, 208, 247);
+    border-radius: 20px;
+    font-size: 20px;
+}
+.texto button:hover{
+    background-color: rgb(44, 46, 182);
+    color: rgb(205, 212, 247);
+    cursor: pointer;
+}
+.texto img{
+    width: 40%;
+    left: 50%;
+}
+.texto h1{
+    font-size: 22px;
+}
+.quiz h1{
+    width: 35%;
+    float: left;
+    padding: 70px;
+}
+.quiz2 h1{
+    width: 35%;
+    float: right;
+    padding: 70px;
+}
+.quiz3 h1{
+    width: 35%;
+    float: left;
+    padding: 70px;
+}
+.quiz4 h1{
+    width: 35%;
+    float: right;
+    padding: 70px;
+}
+
+.imagem{
+    width: 60%;
+    float: right;
+}
+.table img{
+    width: 30px;
+}
+.jogos img{
+    width: 400px;
+}
+.jogos{
+    transform: translate(14%,6%);
+    padding: 10px;
+    width: 90%;
+}
+.jogos button{
+    background-color: rgb(204, 205, 241);
+    color: rgb(205, 212, 247);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.jogos button:hover{
+    background-color: rgb(101, 104, 235);
+    color: rgb(205, 212, 247);
+    cursor: pointer;
+}
+.formulario button{
+    width: 95px;
+}
+.bt input{
+    background-color: rgb(253, 253, 253);
+    color: rgb(10, 11, 15);
+    cursor: pointer;
+    font-size: 18px;
+}
+.bt input:hover{
+    background-color: rgb(86, 88, 201);
+    color: rgb(24, 24, 26);
+    cursor: pointer;
+}
+.abc input{
+    background-color: rgb(253, 253, 253);
+    color: rgb(10, 11, 15);
+    cursor: pointer;
+    font-size: 18px;
+}
+.abc input:hover{
+    background-color: rgb(60, 63, 189);
+    color: rgb(24, 24, 26);
+    cursor: pointer;
+}
+
+
+.logo img {
+    width: 128px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    min-height: 64px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.menu nav ul, .social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu nav ul li, .social ul li {
+    margin: 0px 12px;
+}
+
+.menu, .social {
+    display: flex;
+    align-items: center;
+}
+
+.menu a, .social a {
+    text-decoration: none;
+    color: black;
+}
+section.banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(CAPA\ NOVA.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section.banner .conteudo {
+    background-color: #d5ebeb7d;
+    padding:12px;
+}
+section.banner .botao {
+    margin: 12px 12px;
+    background-color: rgb(96, 208, 236);
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.social {
+    background-color: rgb(96, 111, 241);
+    padding: 20px;
+}
+.logo {
+    background-color: rgb(96, 111, 241);
+    padding: 12px
+}
