@@ -4,6 +4,7 @@ header.cabecalho {
 img {
     max-width: 100%;
     width: 32%;
+    -webkit-animation:bounce-top .9s both;animation:bounce-top .9s both
 }
 
 body {
@@ -83,11 +84,12 @@ p, li {
     width: 30%;
     float: left;
     margin: 0 15px 15px 0;
-    -webkit-animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both
+    -webkit-animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
 }
 
 .sobre p {
     text-align: justify;
+    -webkit-animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
 }
 .abc {
     padding: 20px;
@@ -99,7 +101,7 @@ p, li {
 }
   .abc img{
     width: 80%;
-    -webkit-animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both
+    -webkit-animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
   }
 .abc h1{
     font-size: 20px;
@@ -122,6 +124,8 @@ p, li {
 .texto img{
     width: 40%;
     left: 50%;
+    -webkit-animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
+
 }
 .texto h1{
     font-size: 22px;
@@ -134,34 +138,15 @@ p, li {
 .table img{
     width: 30px;
 }
-.jogos img{
-    width: 400px;
-}
-.jogos{
-    transform: translate(14%,6%);
-    padding: 10px;
-    width: 90%;
-}
-.jogos button{
-    background-color: rgb(204, 205, 241);
-    color: rgb(205, 212, 247);
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.jogos button:hover{
-    background-color: rgb(101, 104, 235);
-    color: rgb(205, 212, 247);
-    cursor: pointer;
-}
 .formulario button{
     width: 95px;
 }
-.bt input{
+.bt input {
     background-color: rgb(253, 253, 253);
     color: rgb(10, 11, 15);
     cursor: pointer;
     font-size: 18px;
+    border-radius: 10px;
 }
 .bt input:hover{
     background-color: rgb(86, 88, 201);
@@ -236,6 +221,10 @@ header.cabecalho a.btnface, .social{
 li {
     font-size: 16px;
 }
+header.cabecalho nav ul li a {
+    font-size: 18px;
+}
+
 section.foto {
     width: 100%;
     display: flex;
@@ -262,11 +251,12 @@ ul {
     gap: 90px;
 }
 ul.nav li.nav-item {
-    background-color: #fefefe;
+    background-color: #5460db;
 }
 
+
 ul.nav li.nav-item:hover {
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(54, 37, 161);
 }
 
 ul.nav li.nav-item:hover > a {
@@ -280,6 +270,7 @@ ul.nav li.nav-item:hover > a {
     width: 32px;
 }
 
+
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
@@ -289,4 +280,5 @@ ul.nav li.nav-item:hover > a {
 @-webkit-keyframes scale-up-ver-center{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}100%{-webkit-transform:scaleY(1);transform:scaleY(1)}}@keyframes scale-up-ver-center{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}100%{-webkit-transform:scaleY(1);transform:scaleY(1)}}
 
 @-webkit-keyframes rotate-scale-down{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(.5) rotateZ(180deg);transform:scale(.5) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}@keyframes rotate-scale-down{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(.5) rotateZ(180deg);transform:scale(.5) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}
-@-webkit-keyframes scale-up-tl{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 0;transform-origin:0 0}}@keyframes scale-up-tl{0%{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:0 0;transform-origin:0 0}}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
