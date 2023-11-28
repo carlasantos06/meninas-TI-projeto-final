@@ -2,7 +2,7 @@
     width: 128px;
 }
 
-header {
+header { 
     display: flex;
     width: 100%;
     min-height: 64px;
@@ -172,6 +172,7 @@ footer div.footer-interno{
     padding: 24px;
     margin: 12px auto;
     justify-content: space-around;
+    color: #7c7c7cc7;
 }
 
 footer div.footer-interno .footer-coluna-1 img {
