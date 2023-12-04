@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rascunho</title>
+</head>
+<body align="center"><br><br>
+    <fieldset>
+        <h1>Conheça os Logos</h1><br>
+        <h2>Programação Web</h2><br>
+        <hr>
+
+    <button onclick="alterarImagem('img','html.png');">Clique para trocar a HTML</button>
+    <button onclick="alterarImagem('img','css.png');">Clique para trocar a CSS</button>
+    <button onclick="alterarImagem('img','javascript.png');">Clique para trocar a JAVA SCRIPT</button><br><br>
+    <img src="CSS.png" width="10%" alt="Imagem" title="Logo Programação" id="img">
+
+    <script type="text/javascript"> 
+        function alterarImagem(objeto, caminhoNovaImagem){
+            document.getElementById(objeto).src = caminhoNovaImagem }
+
+
+    </script>
+    </fieldset>
+</body>
+</html>
