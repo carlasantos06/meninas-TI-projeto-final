@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quem somos?</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- <header class="cabecalho">
+
+    </header> -->
+    <nav class="menu d-flex justify-content-evenly col py-2">
+        <img src="capanova.png" class="logo-header col col-md-2 col-lg-1">
+        <ul>
+          <li><a href="index.html">Págia inicial</a> </li>
+          <li><a href="quem somos.html">Quem somos?</a> </li> 
+          <li><a href="Quiz.html">Quiz</a> </li> 
+          <li><a href="jogos.html">Jogos</a> </li>
+          <li><a href="dúvidas e sugestões.html">Dúvidas ou sugestões</a> </li></ul>
+   
+        <div class="social col-1 d-flex flex-row flex-nowrap justify-content-evenly float-right">
+        <a href="#" class="btnface"><img src="Img/facebook logo.png"/> </a>
+        <a href="#" class="btnface"><img src="Img/instagram logo.png" /> </a>
+        <a href="#" class="btnface"><img src="Img/whatsapp logp.png" /> </a>
+  </nav>
+<div class="texto" align="center">
+    &nbsp;&nbsp;&nbsp;<br>&nbsp;<br><br><br><br><br>
+    <button onclick="alterarImagem('img','site.png');">O que temos no site?</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="alterarImagem('img','quizz.png');">Sobre nossos Quiz</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="alterarImagem('img','intuito.png');">Nosso intuito</button><br><br>
+    <img src="site.png" width="10%" alt="Imagem" title="scratch" id="img">
+    <script type="text/javascript"> 
+        function alterarImagem(objeto, caminhoNovaImagem){
+            document.getElementById(objeto).src = caminhoNovaImagem }
+        
+    </script>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+    </body>  
+    </html>
